@@ -28,9 +28,27 @@
     ></script>
 
         <script>
-    const heading= React.createElement("h1", {}, "this is the heading");
+    const heading= React.createElement("h1", {id:"suman"}, [
+        "this is the heading 1",
+        React.createElement("p", {id: "para"}, "this is the paragreaph tag"),
+        React.createElement("h2", {id:"heading 2"}, "This is a test")
+    ]);
     const root = ReactDOM.createRoot(document.getElementById("root"))
     root.render(heading)
 </script>
   </body>
 </html>
+
+
+
+<!--  the order of the  file is always in sequence -->
+<!-- 
+const heading= React.createElement("h1", {id:"suman"}, [
+        "this is the heading 1",
+        React.createElement("p", {id: "para"}, "this is the paragreaph tag"),
+        React.createElement("h2", {id:"heading 2"}, "This is a test")
+    ]); -->
+
+<!-- JSX -->
+
+<!-- ReactElement is basically a javasciript object and and the browser understands the HTML -->
