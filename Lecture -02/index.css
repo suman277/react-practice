@@ -1,0 +1,49 @@
+// revising from lecture 01 :
+// using normal javascript :
+// const heading= document.createElement("h1");
+// heading.innerText="Suman Kumar Sahu";
+// const root = document.getElementById("root").appendChild(heading);
+
+
+// USING REACT CDN LINKS:
+
+// const heading= React.createElement("h1", {}, "This is just a heading ");
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(heading)
+
+
+
+// using jsx to build the siblings:
+const heading= React.createElement("h1", {"id":"suman"},[
+    React.createElement("h2", {id:"heading2"}, "This is the heading no 2"),
+    React.createElement("h3", {id:"heading3"},"This si heading number 3")
+])
+
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(heading)
+
+
+html codes:
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React Lecture 02</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.production.min.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"
+    ></script>
+
+    <script type="module" src="./App.js"></script>
+  </body>
+</html>
