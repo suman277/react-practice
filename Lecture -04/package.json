@@ -1,0 +1,20 @@
+{
+  "name": "lecture--04",
+  "version": "1.0.0",
+  "description": "react tutorial",
+  "scripts": {
+    "start": "npx parcel index.html",
+    "test": "jest"
+  },
+  "keywords": [
+    "react",
+    "components"
+  ],
+  "author": "sumankumarsahu",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.14.4",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  }
+}

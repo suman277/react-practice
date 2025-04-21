@@ -1,0 +1,47 @@
+*{
+    background-color: gray;
+}
+
+#img-src {
+    height: 80px;
+    width: 120px;
+    display: block;
+}
+
+#img-src img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#heading{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+#list {
+    display: flex;
+    justify-content: space-evenly; /* Evenly distribute space between items */
+    list-style: none; /* Remove default bullet points */
+    padding: 0; /* Remove default padding */
+    width: 100%; /* Ensure it takes full width of the parent container */
+  }
+  
+  #list li {
+    padding: 10px;
+    font-size: 18px;
+  }
+
+#res-body{
+    margin: 25px;
+    height: 300px;
+    width: 250px;
+    border: 1px black solid;
+}
+
+#res-img img{
+    margin: 20px;
+    height: 80px;
+    width: 200px;
+    display: block;
+}
